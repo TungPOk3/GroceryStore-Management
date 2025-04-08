@@ -11,15 +11,13 @@ namespace GroceryWebsite.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        private readonly IVNPayService _vnpayService;
 
-        public OrderController(IOrderService orderService, IVNPayService vnpayService)
+        public OrderController(IOrderService orderService)
         {
             _orderService = orderService;
-            _vnpayService = vnpayService;
         }
 
-        [HttpPost("payment")]
+        [HttpPost("create-order")]
         public IActionResult CreatePayment([FromBody] int shippingMethod)
         {
             var order = _orderService.GetOrder(shippingMethod);
@@ -29,13 +27,10 @@ namespace GroceryWebsite.Controllers
                 return Ok(new { message = "Không có sản phẩm nào trong giỏ hàng." });
             }
 
-            string paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, order.TotalAmount);
-
             return Ok(new
             {
                 message = "Đơn hàng của bạn.",
-                order,
-                paymentUrl
+                order
             });
         }
 

@@ -20,16 +20,39 @@ namespace GroceryWebsite.Controllers
         }
 
         [HttpPost("register")]
-        public IActionResult Register(RegisterRequest registerRequest)
+        public async Task<IActionResult> Register([FromBody] RegisterRequest registerRequest)
         {
             try
             {
-                var user = _authService.Register(registerRequest);
-                return Ok(user);
+                var user = await _authService.Register(registerRequest);
+                return Ok(new
+                {
+                    message = "Register succesfully. Please check your box!",
+                    user = new
+                    {
+                        user.UserId,
+                        user.Email,
+                        user.FullName
+                    }
+                });
             }
             catch (Exception ex)
             {
                 return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("verify-email")]
+        public IActionResult VerifyEmail([FromQuery] string token)
+        {
+            try
+            {
+                var result = _authService.VerifyEmail(token);
+                return Ok(new { message = result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
             }
         }
 

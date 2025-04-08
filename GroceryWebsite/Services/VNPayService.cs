@@ -1,4 +1,5 @@
-﻿using GroceryWebsite.Services.Interfaces;
+﻿using GroceryWebsite.Models;
+using GroceryWebsite.Services.Interfaces;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
@@ -66,6 +67,8 @@ namespace GroceryWebsite.Services
                 return BitConverter.ToString(hash).Replace("-", "").ToUpper();
             }
         }
-    
+
+        
+
     }
 }

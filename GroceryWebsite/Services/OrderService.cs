@@ -16,6 +16,13 @@ namespace GroceryWebsite.Services
             _userService = userService;
         }
 
+        public Order GetOrderbyId(int id) 
+        {
+            return _context.Orders
+                .Include(o => o.OrderDetails)
+                .ThenInclude(od => od.Product)
+                .FirstOrDefault(o => o.OrderId == id);
+        }
 
         public Order GetOrder(int typeShipping)
         {

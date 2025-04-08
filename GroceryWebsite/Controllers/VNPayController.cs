@@ -12,11 +12,38 @@ namespace GroceryWebsite.Controllers
     {
         private readonly IOrderService _orderService;
         private readonly IConfiguration _configuration;
+        private readonly IVNPayService _vNPayService;
 
-        public VNPayController(IOrderService orderService, IConfiguration configuration)
+        public VNPayController(IOrderService orderService, IConfiguration configuration, IVNPayService vNPayService)
         {
             _orderService = orderService;
             _configuration = configuration;
+            _vNPayService = vNPayService;
+        }
+
+        [HttpPost("payment")]
+        public IActionResult CreatePayment([FromBody] int orderId)
+        {
+            var order = _orderService.GetOrderbyId(orderId);
+
+            if (order == null)
+            {
+                return NotFound(new { message = "Không tìm thấy đơn hàng." });
+            }
+
+            if (order.OrderStatus == "Paid")
+            {
+                return BadRequest(new { message = "Đơn hàng đã được thanh toán." });
+            }
+
+            string paymentUrl = _vNPayService.CreatePaymentUrl(orderId, order.TotalAmount);
+
+            return Ok(new
+            {
+                message = "Liên kết thanh toán được tạo.",
+                paymentUrl
+            });
+
         }
 
         [HttpGet("callback")]
@@ -58,5 +85,7 @@ namespace GroceryWebsite.Controllers
                 return BadRequest(new { message = "Thanh toán thất bại!", orderId });
             }
         }
+
+
     }
 }

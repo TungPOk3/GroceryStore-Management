@@ -135,3 +135,12 @@ E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\obj\Debug\net8.0\refint\Groce
 E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\obj\Debug\net8.0\GroceryWebsite.pdb
 E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\obj\Debug\net8.0\GroceryWebsite.genruntimeconfig.cache
 E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\obj\Debug\net8.0\ref\GroceryWebsite.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\Microsoft.AspNetCore.WebUtilities.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\obj\Debug\net8.0\GroceryWebsite.sourcelink.json
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\MailKit.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\MimeKit.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\System.Formats.Asn1.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Document\C#_Saver\GroceryWebsite\GroceryWebsite\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

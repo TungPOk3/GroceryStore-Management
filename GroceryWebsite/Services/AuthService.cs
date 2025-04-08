@@ -6,6 +6,8 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using GroceryWebsite.Services.Interfaces;
+using System.Web;
 
 namespace GroceryWebsite.Services
 {
@@ -14,33 +16,46 @@ namespace GroceryWebsite.Services
         private readonly AppDbContext _context;
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IConfiguration _configuration;
+        private readonly IEmailService _emailService;
 
-        public AuthService(AppDbContext context, IPasswordHasher<User> passwordHasher, IConfiguration config) 
+        public AuthService(AppDbContext context, IPasswordHasher<User> passwordHasher, IConfiguration config, IEmailService emailService) 
         {
             _context = context;
             _passwordHasher = passwordHasher;
             _configuration = config;
+            _emailService = emailService;
         }
 
-        public User Register(RegisterRequest registerRequest)
+        public async Task<User> Register(RegisterRequest registerRequest)
         {
             if (_context.Users.Any(u => u.Email == registerRequest.Email))
             {
                 throw new Exception("Email already exists");
             }
 
+            var token = Guid.NewGuid().ToString();
             var user = new User
             {
                 UserName = registerRequest.UserName,
                 Email = registerRequest.Email,
                 FullName = registerRequest.FullName,
                 PhoneNumber = registerRequest.PhoneNumber,
-                Address = registerRequest.Address
+                Address = registerRequest.Address,
+                EmailVerificationToken = token
             };
 
             user.Password = _passwordHasher.HashPassword(user, registerRequest.Password);
             _context.Users.Add(user);
             _context.SaveChanges();
+
+            var verifyUrl = $"{_configuration["ApiBaseUrl"]}/api/auth/verify-email?token={HttpUtility.UrlEncode(token)}";
+
+            var subject = "Xác thực tài khoản của bạn";
+            var body = $"<p>Xin chào {user.FullName},</p>" +
+                       $"<p>Vui lòng xác thực tài khoản bằng cách nhấn vào liên kết bên dưới:</p>" +
+                       $"<p><a href='{verifyUrl}'>Xác thực email</a></p>";
+
+            await _emailService.SendEmailAsync(user.Email, subject, body);
 
             return user;
         }
@@ -59,6 +74,11 @@ namespace GroceryWebsite.Services
             if (result == PasswordVerificationResult.Failed)
             {
                 throw new Exception("Invalid username or password");
+            }
+
+            if (!user.IsEmailConfirmed)
+            {
+                throw new Exception("Email is not verified. Please check your inbox.");
             }
 
             var claims = new List<Claim>
@@ -81,6 +101,24 @@ namespace GroceryWebsite.Services
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        public string VerifyEmail(string token)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.EmailVerificationToken == token);
+
+            if (user == null)
+                throw new Exception("Token is invalid or expired!");
+
+            if (user.IsEmailConfirmed)
+                return "Email has been previously verified.";
+
+            user.IsEmailConfirmed = true;
+            user.EmailVerificationToken = null;
+            _context.SaveChanges();
+
+            return "Email verification successful!";
+        }
+
 
     }
 }

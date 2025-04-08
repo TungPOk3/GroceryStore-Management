@@ -1,4 +1,6 @@
-﻿namespace GroceryWebsite.Services.Interfaces
+﻿using GroceryWebsite.Models;
+
+namespace GroceryWebsite.Services.Interfaces
 {
     public interface IVNPayService
     {

@@ -12,6 +12,8 @@ namespace GroceryWebsite.Models
         public string PhoneNumber { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
         public string Role { get; set; } = "Customer";
+        public bool IsEmailConfirmed { get; set; } = false;
+        public string? EmailVerificationToken { get; set; }
 
         [JsonIgnore]
         public ICollection<Cart> Carts { get; set; } = new List<Cart>();      
