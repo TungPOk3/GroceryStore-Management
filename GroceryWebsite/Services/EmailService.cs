@@ -1,5 +1,6 @@
 ﻿using GroceryWebsite.Services.Interfaces;
 using MailKit.Net.Smtp;
+using Microsoft.EntityFrameworkCore;
 using MimeKit;
 
 namespace GroceryWebsite.Services
@@ -32,5 +33,6 @@ namespace GroceryWebsite.Services
             await smtp.SendAsync(email);
             await smtp.DisconnectAsync(true);
         }
+
     }
 }

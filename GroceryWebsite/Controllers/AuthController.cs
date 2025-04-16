@@ -1,7 +1,8 @@
 ﻿using GroceryWebsite.DTOs;
 using GroceryWebsite.Services;
-using GroceryWebsite.Models;
 using Microsoft.AspNetCore.Mvc;
+using GroceryWebsite.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GroceryWebsite.Controllers
 {
@@ -12,11 +13,13 @@ namespace GroceryWebsite.Controllers
     {
         private readonly AuthService _authService;
         private readonly IConfiguration _configuration;
+        private readonly AppDbContext _context;
 
-        public AuthController(AuthService authService, IConfiguration config)
+        public AuthController(AuthService authService, IConfiguration config, AppDbContext context)
         {
             _authService = authService;
             _configuration = config;
+            _context = context;
         }
 
         [HttpPost("register")]
