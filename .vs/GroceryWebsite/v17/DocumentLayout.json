@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "E:\\Document\\C#_Saver\\GroceryWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\dtos\\updatepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\dtos\\updatepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|e:\\document\\c#_saver\\grocerywebsite\\grocerywebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0408307A-AD79-423D-8470-7F89ECF4A031}|GroceryWebsite\\GroceryWebsite.csproj|solutionrelative:grocerywebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\appsettings.json",
-              "RelativeDocumentMoniker": "GroceryWebsite\\appsettings.json",
-              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\appsettings.json",
-              "RelativeToolTip": "GroceryWebsite\\appsettings.json",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T09:56:47.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "GroceryWebsite\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "GroceryWebsite\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAuwBYAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T09:23:36.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "GroceryWebsite\\Services\\AuthService.cs",
-              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\AuthService.cs",
-              "RelativeToolTip": "GroceryWebsite\\Services\\AuthService.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwHYAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:49:40.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Models\\User.cs",
-              "RelativeDocumentMoniker": "GroceryWebsite\\Models\\User.cs",
-              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Models\\User.cs",
-              "RelativeToolTip": "GroceryWebsite\\Models\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAA7AAAA",
+              "Title": "UpdatePasswordRequest.cs",
+              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\DTOs\\UpdatePasswordRequest.cs",
+              "RelativeDocumentMoniker": "GroceryWebsite\\DTOs\\UpdatePasswordRequest.cs",
+              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\DTOs\\UpdatePasswordRequest.cs",
+              "RelativeToolTip": "GroceryWebsite\\DTOs\\UpdatePasswordRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:28:02.071Z"
+              "WhenOpened": "2025-04-16T10:06:23.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\Interfaces\\IEmailService.cs",
-              "RelativeDocumentMoniker": "GroceryWebsite\\Services\\Interfaces\\IEmailService.cs",
-              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\Interfaces\\IEmailService.cs",
-              "RelativeToolTip": "GroceryWebsite\\Services\\Interfaces\\IEmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:10:30.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "EmailService.cs",
               "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "GroceryWebsite\\Services\\EmailService.cs",
               "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\EmailService.cs",
               "RelativeToolTip": "GroceryWebsite\\Services\\EmailService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:06:41.633Z"
+              "WhenOpened": "2025-04-16T08:12:09.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Program.cs",
+              "RelativeDocumentMoniker": "GroceryWebsite\\Program.cs",
+              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Program.cs",
+              "RelativeToolTip": "GroceryWebsite\\Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAiwEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T15:40:39.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "GroceryWebsite\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "GroceryWebsite\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:28:36.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "GroceryWebsite\\Services\\UserService.cs",
+              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Services\\UserService.cs",
+              "RelativeToolTip": "GroceryWebsite\\Services\\UserService.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAswGUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:16:24.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GroceryWebsite\\Models\\User.cs",
+              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Models\\User.cs",
+              "RelativeToolTip": "GroceryWebsite\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:16:20.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GroceryWebsite\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Document\\C#_Saver\\GroceryWebsite\\GroceryWebsite\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GroceryWebsite\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAA+wDoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:16:13.709Z",
+              "EditorCaption": ""
             }
           ]
         }

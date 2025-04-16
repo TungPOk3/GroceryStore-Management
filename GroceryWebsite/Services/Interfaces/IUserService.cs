@@ -6,6 +6,8 @@ namespace GroceryWebsite.Services.Interfaces
     public interface IUserService
     {
         int GetUserId();
-        User UpdateUser(int userId, UpdateUserRequest updateUserRequest);
+        User UpdateUser(UpdateUserRequest updateUserRequest);
+        Task ResetPasswordAsync(string email);
+        User ChangePassword(UpdatePasswordRequest updatePasswordRequest);
     }
 }
