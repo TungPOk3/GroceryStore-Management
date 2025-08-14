@@ -1,5 +1,5 @@
 ﻿using GroceryWebsite.DTOs;
-using GroceryWebsite.Services;
+using GroceryWebsite.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +10,39 @@ namespace GroceryWebsite.Controllers
     [Authorize(Roles = "Admin")]
     public class ProductController : ControllerBase
     {
-        private readonly ProductService _productService;
+        private readonly IProductService _productService;
 
-        public ProductController(ProductService productService)
+        public ProductController(IProductService productService)
         {
             _productService = productService;
+        }
+        [HttpGet("get-all-products")]
+        [AllowAnonymous]
+        public IActionResult GetAllProducts()
+        {
+            try
+            {
+                var products = _productService.GetAllProducts();
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+        [HttpGet("search-product")]
+        [AllowAnonymous]
+        public IActionResult SearchProduct([FromQuery] string str)
+        {
+            try
+            {
+                var products = _productService.SearchProduct(str);
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPost("add-product")]
