@@ -1,10 +1,11 @@
 ﻿using GroceryWebsite.Data;
 using GroceryWebsite.DTOs;
 using GroceryWebsite.Models;
+using GroceryWebsite.Services.Interfaces;
 
 namespace GroceryWebsite.Services
 {
-    public class CategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly AppDbContext _context;
 

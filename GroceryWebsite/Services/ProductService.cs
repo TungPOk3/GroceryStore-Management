@@ -1,16 +1,34 @@
 ﻿using GroceryWebsite.Data;
 using GroceryWebsite.DTOs;
 using GroceryWebsite.Models;
+using GroceryWebsite.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GroceryWebsite.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private readonly AppDbContext _context;
 
         public ProductService(AppDbContext context)
         {
             _context = context;
+        }
+
+        public List<Product> GetAllProducts()
+        {
+            return _context.Products.ToList();
+        }
+
+        public List<Product> SearchProduct(string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                return _context.Products.ToList();
+            }
+
+            return _context.Products
+                .Where(p => EF.Functions.Like(p.ProductName, $"%{str}%")).ToList();
         }
 
         public Product AddProduct(CreateProductRequest createProductRequest)
